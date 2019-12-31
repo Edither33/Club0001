@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>CMemberServlet</servlet-name>
+        <servlet-class>servlet.CMemberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CMemberServlet</servlet-name>
+        <url-pattern>/servlet/CMemberServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ActivityServlet</servlet-name>
+        <servlet-class>servlet.ActivityServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ActivityServlet</servlet-name>
+        <url-pattern>/servlet/ActivityServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addCMemberServlet</servlet-name>
+        <servlet-class>servlet.addCMemberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addCMemberServlet</servlet-name>
+        <url-pattern>/servlet/addCMemberServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addActivityServlet</servlet-name>
+        <servlet-class>servlet.addActivityServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addActivityServlet</servlet-name>
+        <url-pattern>/servlet/addActivityServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addAPlaceServlet</servlet-name>
+        <servlet-class>servlet.addAPlaceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addAPlaceServlet</servlet-name>
+        <url-pattern>/servlet/addAPlaceServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>APlaceServlet</servlet-name>
+        <servlet-class>servlet.APlaceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>APlaceServlet</servlet-name>
+        <url-pattern>/servlet/APlaceServlet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>news.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

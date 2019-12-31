@@ -1,0 +1,410 @@
+@charset"utf-8";
+* {
+  box-sizing: border-box;
+}
+body {
+	padding: 10px;
+	background: #f1f1f1;
+}
+a,a:hover {
+	text-decoration: none;
+}
+/*头部*/
+.header{
+	padding: 30px;
+ 	text-align: center;
+    margin:0 auto;
+    background-color: white;
+}
+.slide {
+    position: relative;
+    margin: 0px;
+    text-align: center;
+    font-family: Arial;
+    color: #FFF;
+    overflow: hidden;
+}
+.slide .slide-auto {
+	margin: 0;
+    padding: 0;
+    width: 9999px;
+    transition: all 0.5s;
+    animation: marginLeft 10.5s infinite;
+}
+.slide .item {
+    float: left;
+	margin: auto;
+	list-style: none;
+	width: 330px;
+	height: 200px
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes marginLeft {
+    0% {
+        margin-left: 0;
+    }
+
+    28.5% {
+        margin-left: 0;
+    }
+
+    33.3% {
+        margin-left: -330px;
+    }
+	62%{
+		margin-left: -330px;
+	}
+    66.7% {
+        margin-left: -660px;
+    }
+
+    95.2% {
+        margin-left: -660px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+/*导航*/
+.nav{
+	overflow: hidden;
+	background-color: grey;
+}
+.nav a {
+	display: block;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+	color: aliceblue;
+}
+/*导航状态*/
+.nav a:hover{
+	color: black;
+	background-color:#E5C9C9;
+}
+/*左侧区域*/
+.leftcolumn{
+	margin-left: 10px;
+	margin-right: 10px;
+	float: left;
+	/*
+	width:15%;
+	*/
+	width: 330px;
+	background-color: #f1f1f1;
+} 
+/*中心区域*/
+.centercolumn{
+	background-color: white;
+	margin: 10px; 
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+/*本想做三列的，但由于本人技术限制，放弃了三列
+.rightcolumn{
+	float: left;
+	width: 15%;
+	background-color: white;
+	padding-left: 20px;
+}*/
+/*消除浮动*/
+.content:after{
+	content: " ";
+	display: table;
+	clear: both;
+	margin-bottom: 40px;
+}
+
+/*底部区域*/
+.footer{
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	font-size:12px;
+	color:#C4C4C4;
+}
+/*卡片区域*/
+.card{
+	width: 100%;
+	padding: 15px;
+	margin-top: 20px; 
+	background: white;
+}
+.card a{
+	text-decoration: none;
+	color: black;
+}
+.leftcolumn .card a:hover{
+	color: blue;
+}
+
+.card li{
+	list-style-type:square;
+	padding-top:10px; 
+}
+
+/*图像区域*/
+.fakeimg {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*文本故事区域（外）*/
+.storyBox{
+	display: flex;
+	margin: 20px 40px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*文本故事区域（内）*/
+.listBox {
+	width: 145px;
+	background: white;
+}
+
+/*文本故事区域（信息）*/
+.info {
+	line-height: 18px;
+	color: black;
+}
+
+/*文本故事区域（图片）*/
+.pic {
+	width: 100%;
+	height: 205px;
+}
+
+.Ico {
+	align-items: center;
+	display: inline-flex;
+	height: 100%;
+}
+
+
+.Ico-h {
+	display: flex;
+	height: 58px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 40px;
+}
+
+.Ico-img {
+	width: 36px;
+	height: 38px;
+	margin-right: 20px;
+}
+
+.Ico-name {
+	font-size: 18px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+.storyIcoBox {
+	background: white;
+}
+
+.wrap {
+	background-position: 50%;
+    background-size: cover;
+	padding-bottom: 80px;
+	position: relative;
+}
+
+.wrap-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 84px;
+	width: 100%;
+}
+
+.wrap-user {
+	position: relative;
+	z-index: 1;
+}
+
+.userbox {
+	margin-left: 20px;
+	padding-bottom: 16px;
+}
+
+.user-pic {
+	position: relative;
+	float: left;
+	width: 64px;
+	height: 64px;
+	border: 2px  solid #625454;
+	border-radius: 50%;
+}
+
+.wrap-h {
+	width: 1100px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.h {
+	position: sticky;
+	z-index: 9999;
+	top:0px;
+}
+
+.leftBox {
+	margin-left: 10px;
+	margin-right: 10px;
+	float: left;
+	/*
+	width:15%;
+	*/
+	width: 330px;
+	background-color: #f1f1f1;
+}
+
+.rightBox {
+	width: 370px;
+	padding: 10px;
+	float: right;
+	background: white;
+	position: sticky;
+	top:258px;
+}
+
+
+
+.r-h {
+	margin-left: 700px;
+}
+
+
+
+.wh-in {
+	height: 66px;
+    background: #fff;
+    box-shadow: 0 0 0 1px #eee;
+    border-radius: 0 0 4px 4px;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.wh-in a{
+	height:100%;
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	line-height: 66px;
+	margin-left:50px;
+	color: black;
+}
+.wh-in a:hover{
+	border-bottom: 3px solid red;
+	color: silver;
+}
+/*分割线*/
+.card-bottom{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	float: left;
+	width: 100%;
+}
+.info-img{
+	width:235px;
+	height: 135px;
+	margin-right: 20px;
+	float:left;
+}
+/*文字是否环绕图片*/
+.info-text p{
+	overflow: hidden;
+}
+.textarea{
+	position: relative;
+    font-size: 14px;
+    border-radius: 4px;
+}
+#i-ann-content{
+	color: #6d757a;
+    line-height: 20px;
+}
+#i-ann-content textarea{
+    width: 100%;
+    height: 172px;
+    color: #6d757a;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 10px;
+    margin: -10px 0 0 -11px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: content-box;
+}
+.card-title{
+	color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    padding: 0 0 15px;
+    position: relative;
+}
+.card-content{
+	display: block;
+}
+.card-content-item{
+	width: 45%;
+	display: block;
+	float: left;
+	margin: 0 20px 30px 0;
+}
+.card-content-item img{
+	width: 110px;
+	height: 144px;
+	float: left;
+	display: block;
+}
+.detail{
+    margin-left: 120px;
+    max-height: 140px;
+    overflow: hidden;
+}
+.detail p{
+	font-size: 10px;
+}
+/*留言板*/
+.user-face{
+	float: left;
+    margin: 24px 0 0 5px;
+    position: relative;
+}
+.user-face img{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+}
+.con{
+    position: relative;
+    margin-left: 85px;
+	padding: 22px 0 14px;
+    border-top: 1px solid #e5e9ef;
+}
+.text{
+    line-height: 20px;
+    padding: 2px 0;
+    font-size: 14px;
+    text-shadow: none;
+    overflow: hidden;
+}
+.con .info{
+    color: #99a2aa;
+    line-height: 26px;
+    font-size: 12px;
+}
+
